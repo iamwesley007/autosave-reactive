@@ -1,14 +1,16 @@
 // Step 1 — Fund Lasna: swap Sepolia ETH for testnet lREACT via the official
 // Reactive faucet contract. 1 Sepolia ETH -> 100 lREACT (max 5 ETH per tx).
 // Requires the deployer wallet to hold Sepolia ETH from a public faucet.
-// Usage: node scripts/01-fund-lasna.js [ethAmount]   (default 0.05)
+// Usage: node scripts/01-fund-lasna.js [ethAmount]   (default 0.03)
+// 0.03 ETH -> 3 lREACT, which covers deployment, reserves, and dozens of
+// reactions; the rest of the Sepolia ETH stays for Sepolia-side costs.
 import { ethers } from "ethers";
 import {
   sepoliaWallet, lasnaWallet, LASNA_FAUCET_L1, FAUCET_L1_ABI,
   SEPOLIA_EXPLORER, LASNA_EXPLORER, eth, sleep,
 } from "./lib.js";
 
-const SEND = ethers.parseEther(process.argv[2] || "0.05");
+const SEND = ethers.parseEther(process.argv[2] || "0.03");
 
 const sepolia = await sepoliaWallet();
 const lasna = await lasnaWallet();

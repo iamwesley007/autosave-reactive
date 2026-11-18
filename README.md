@@ -83,7 +83,7 @@ chmod 600 .deployer-key
 
 # 1. Fund the deployer address with Sepolia ETH from a public faucet,
 #    then swap some for testnet lREACT via the official Reactive faucet:
-node scripts/01-fund-lasna.js 0.05
+node scripts/01-fund-lasna.js 0.03
 
 # 2. Deploy + wire + fund both contracts' reserves:
 node scripts/02-deploy.js

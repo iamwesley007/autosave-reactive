@@ -30,10 +30,14 @@ generated for this project):
 Funding needed: **≥ 0.05 Sepolia ETH** (0.1+ preferred). Once funded, run:
 
 ```bash
-node scripts/01-fund-lasna.js 0.05   # swap Sepolia ETH -> lREACT
+node scripts/01-fund-lasna.js 0.03   # swap Sepolia ETH -> lREACT (0.03 ETH -> 3 lREACT)
 node scripts/02-deploy.js            # deploy + wire + fund reserves
 node scripts/03-demo-loop.js 0.01    # full loop, writes proof.json
 ```
+
+Budget for a 0.05 ETH claim: 0.03 ETH to the Lasna faucet (3 lREACT covers
+deployment, reserves, and dozens of reactions at ~0.025 lREACT each), ~0.02
+ETH kept on Sepolia for the vault deploy, reserves, WETH wrap, and transfers.
 
 ## Deployed contracts (to be filled)
 
