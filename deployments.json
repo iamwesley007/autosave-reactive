@@ -1,0 +1,14 @@
+{
+  "network": "testnet",
+  "user": "0x3dd829cCeD56b1E9276780D1E3661d716a57a35F",
+  "savingsRateBps": "1000",
+  "minPaymentWei": "1000000000000000",
+  "reactive": "0x9D11B84491c551D69285DfbDB94f2605F49509cf",
+  "vault": "0xcaF8ffD9473E1B8dF3f25901a9C727d4b8a2f316",
+  "reactiveDeployTx": "0xd83a73b81fc4bf8c62ff1f972670709f900b2714925c13556599072ba4341c4b",
+  "vaultDeployTx": "0xb0d6a297761d76c9a13e2154aa8e6a3b68d8dd833527f483531246af609b5350",
+  "setVaultTx": "0x4413bf35113d8334cb0c6a6cff270d26ae1d8f3a29477615fe8254cbcc92838b",
+  "reactiveReservesTx": "0x761e4ae34b8b1f9eac3fed1847b7ba21483ccf2087289c6b5cbbbe601b8b4258",
+  "vaultReservesTx": "0x1fa1ef7f7487415597dc1128da078b3592fb4fe2b0f61fabc189e4b5f7e16784",
+  "deployedAt": "2026-11-18T15:20:16.077Z"
+}

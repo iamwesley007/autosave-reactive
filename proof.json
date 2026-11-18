@@ -1,0 +1,39 @@
+{
+  "ranAt": "2026-11-18T15:21:19.172Z",
+  "user": "0x3dd829cCeD56b1E9276780D1E3661d716a57a35F",
+  "paymentWeth": "0.01",
+  "contracts": {
+    "reactive": "0x9D11B84491c551D69285DfbDB94f2605F49509cf",
+    "vault": "0xcaF8ffD9473E1B8dF3f25901a9C727d4b8a2f316",
+    "weth": "0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14"
+  },
+  "transactions": {
+    "approve": {
+      "hash": "0xcfe4acd96f6f97dae73db5fc8b6e281d1c75fe74aadf24b54afb4af55ac61cb4",
+      "explorer": "https://sepolia.etherscan.io/tx/0xcfe4acd96f6f97dae73db5fc8b6e281d1c75fe74aadf24b54afb4af55ac61cb4"
+    },
+    "wethDeposit": {
+      "hash": "0x8b95e48bf3fcce06bad7423b05d65cc2979ff42a2a0f26e893fc6ce2e34ad810",
+      "explorer": "https://sepolia.etherscan.io/tx/0x8b95e48bf3fcce06bad7423b05d65cc2979ff42a2a0f26e893fc6ce2e34ad810"
+    },
+    "originTransfer": {
+      "hash": "0x1795b6f79a6297f10293fb66682108a4b037edd8749f3d4dd7d87b3fd91a87fb",
+      "explorer": "https://sepolia.etherscan.io/tx/0x1795b6f79a6297f10293fb66682108a4b037edd8749f3d4dd7d87b3fd91a87fb"
+    },
+    "reactive": {
+      "hash": "0xc4eeef3eaa9d770a6b4aadbe8b001739638a3e5961812459cb5aa4a35c19a657",
+      "explorer": "https://lasna.reactscan.net/tx/0xc4eeef3eaa9d770a6b4aadbe8b001739638a3e5961812459cb5aa4a35c19a657"
+    },
+    "callback": {
+      "hash": "0x2b4099d690c4e1b2f8e0584069e545e1dfe5fc7eda3ddb79e0e4421c85f4fb80",
+      "explorer": "https://sepolia.etherscan.io/tx/0x2b4099d690c4e1b2f8e0584069e545e1dfe5fc7eda3ddb79e0e4421c85f4fb80"
+    },
+    "callbackFromSystemRecord": null
+  },
+  "stats": {
+    "paymentsSeen": "1",
+    "totalReceivedWei": "10000000000000000",
+    "totalSavedWei": "1000000000000000",
+    "vaultSavingsWei": "1000000000000000"
+  }
+}

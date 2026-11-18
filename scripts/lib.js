@@ -55,6 +55,11 @@ export async function lasnaWallet() {
   const provider = new ethers.JsonRpcProvider(LASNA_RPC);
   const chainId = (await provider.getNetwork()).chainId;
   if (chainId !== LASNA_CHAIN_ID) throw new Error(`refusing to run: Lasna RPC returned chain ${chainId}`);
+  // Lasna rejects EIP-1559 txs with a zero tip ("gas tip cap 0, minimum needed
+  // 1") because its fee oracle reports a 0 priority fee. Pin explicit fees:
+  // maxFee 200 gwei (charged amount is still base + tip), tip 2 gwei.
+  const feeData = new ethers.FeeData(null, ethers.parseUnits("200", "gwei"), ethers.parseUnits("2", "gwei"));
+  provider.getFeeData = async () => feeData;
   return new ethers.Wallet(loadKey(), provider);
 }
 
